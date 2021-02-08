@@ -1,0 +1,824 @@
+@charset "utf-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		5;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	10;
+	dw-gutter-percentage:	25;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+/* Mobile Layout: 480px and below. */
+#snetwork{
+	position:absolute; 
+	right:-2px; 
+	top:2px; 
+	position:fixed;
+	}
+#snetwork:hover{
+	position:absolute; 
+	right:10px; 
+	top:2px; 
+	position:fixed;
+	transition:ease-in-out;
+	-moz-transition:ease-in-out;
+	-webkit-transition:.20s ease-in-out;
+	}
+.gridContainer {
+	width: 100%;
+/*	margin-left: auto;
+	margin-right: auto;
+	width: 87.36%;
+	padding-left: 1.82%;
+	padding-right: 1.82%;*/
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+/*#nav {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	background-color:#FFF;
+	min-height: 40px;
+	position: relative;
+}
+#logo-img {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 10%;
+	display: block;
+	margin-top: 3px;
+}*/
+#button {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	background-color:#000;
+}
+
+#cont-two:hover {
+    border-radius: 20px;
+    background-color:#FFFFFF !important;
+}
+
+#cont-two {
+   
+    margin-left: 0 !important;
+   
+   border:none !important;
+   
+}
+
+
+
+/*----------------------------------------------------*/
+/*.menu{
+	background:#000;
+	
+	color:#FFF;
+	text-align:center;
+	font-size:26px;
+	font-variant:small-caps;
+	text-decoration:none;
+	list-style:none;
+	position:absolute;
+	z-index:999;
+	width:80%;
+	margin-top:1px;
+	border-radius:10px;
+	
+}
+
+
+.menu > li{
+	
+	display:inline-block;
+}
+.menu > li > a{
+	text-decoration:none;
+	color:#FFF;
+	font-size:24px;
+	
+}
+
+@media only screen and (max-width:768px)
+{
+	
+	
+.menu{
+	background:#000;
+	color:#FFF;
+	text-align:left;
+	font-size:26px;
+	font-variant:small-caps;
+	display:none;
+	width:80%;
+	margin-top:2px;
+}
+
+.menu > li{
+	display:block;
+}
+.nav-btn{
+	display:block;
+	color:white;
+	background:black;
+	text-align:left;
+	font-size:30px;
+	cursor:pointer;
+	margin-top:60px;
+	border-radius:10px;
+	height:35px;
+}
+.nav-btn:before {
+	content:url(images/download.png);
+	
+}
+
+}*/
+/*-----------------------------------------------------*/
+
+/*.sf-menu li{
+	display:block;
+	height:35px;
+	line-height:30px;
+	transition:.7s;
+	-moz-transition:.7s;
+	-webkit-transition:.7s;
+	transform:2S;
+	-moz-transform:2S;
+	-webkit-transform:2S;
+	}*/
+/*.menu li a:hover{
+	
+	color:#666;
+*/	/*border-top:#0FF medium solid;*/
+	/*transition:.75s;
+	-moz-transition:.75s;
+	-webkit-transition:.75s;
+	transform:rotateY(360deg);
+	-moz-transform:rotateY(360deg);
+	-webkit-transform:rotateY(360deg);
+	}*/
+#hdr-iso {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+			-webkit-animation: myfirst 5s; /* Chrome, Safari, Opera */
+    animation: myfirst 1s;
+	animation-iteration-count:infinite;
+    -webkit-animation-iteration-count:infinite;
+
+}
+@-webkit-keyframes myfirst {
+    0%   {opacity:0;}
+    25%  {opacity:0.2;}
+    50%  {opacity:0.4;}
+    100% {opacity:1;}
+}
+@keyframes myfirst {
+    0%   {opacity:0;}
+    25%  {opacity:0.2;}
+    50%  {opacity:0.4;}
+    100% {opacity:1;}
+}
+
+#erp {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	font-family:"MS Serif", "New York", serif;
+	
+	background-color:#FFF;
+	color:#006;
+	text-align:center;
+	border:2px #000 solid;
+}
+#erp:hover{
+	box-shadow:#333 2px 2px 2px;
+	}
+#home-link {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+.home_link li img{
+	display:inline;
+	}
+.home_link li img:hover{
+	outline:#006 groove medium;
+	}
+h1{
+	font-family:"MS Serif", "New York", serif;
+	color:#009;
+	}
+#content {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#cont-one {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100% ;
+	display: block;
+}
+#cont-two {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100% !important;
+	display: block;
+}
+#cont-three {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#school {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#school-img {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#school-cont {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	text-align:justify;
+}
+#erp-solution {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#erp-solution_cont {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	text-align:justify;
+}
+#order {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#order-cont {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	text-align:justify;
+}
+#order-img {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#footer {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	background-color:#000;
+	margin-top:20px;
+}
+#foot-one {
+	clear: both;
+	float: left;
+	margin-left: 5.8333%;
+	width: 37.5%;
+	display: block;
+	text-align:left;
+	font-size:1.1em;
+}
+#foot-two {
+	clear: none;
+	float: left;
+	margin-left: 8.1666%;
+	width: 37.5%;
+	display: block;
+	text-align:left;
+	font-size:1.1em;
+}
+#foot-three {
+	clear: both;
+	float: left;
+	margin-left: 5.8333%;
+	width: 37.5%;
+	display: block;
+	text-align:left;
+	font-size:1.1em;
+}
+#foot-four {
+	clear: none;
+	float: left;
+	margin-left: 8.1666%;
+	width: 37.5%;
+	display: block;
+	text-align:left;
+	font-size:1.1em;
+}
+.su_menu li a{
+	color:#FFF;
+	text-decoration:none;
+	list-style-type:none;
+	}
+.su_menu li a:hover{
+	color:#0FF;
+	}
+#futr {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	text-align:center;
+	background-color:#000;
+	color:#FFF;
+}
+p{
+	color:#000;
+	}
+h4{
+	color:#FFC;
+	}
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+.gridContainer {
+	width: 100%;
+/*	width: 90.675%;
+	padding-left: 1.1625%;
+	padding-right: 1.1625%;*/
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+/*#nav {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#logo-img {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 10%;
+	display: block;
+}*/
+#button {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#hdr-iso {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#erp {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	text-align:left;
+}
+#home-link {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#content {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#cont-one {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#cont-two {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100% !important;
+	display: block;
+}
+#cont-three {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#school {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#school-img {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#school-cont {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#erp-solution {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#erp-solution_cont {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#order {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#order-cont {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#order-img {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#footer {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#foot-one {
+	clear: both;
+	float: left;
+	margin-left: 12.8205%;
+	width: 23.0769%;
+	display: block;
+	font-size:1em;
+}
+#foot-two {
+	clear: none;
+	float: left;
+	margin-left: 2.5641%;
+	width: 23.0769%;
+	display: block;
+	font-size:1em;
+}
+#foot-three {
+	clear: none;
+	float: left;
+	margin-left: 2.5641%;
+	width: 23.0769%;
+	display: block;
+	font-size:1em;
+}
+#foot-four {
+	clear: both;
+	float: left;
+	margin-left: 12.8205%;
+	width: 23.0769%;
+	display: block;
+	font-size:1em;
+}
+#futr {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+}
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+.gridContainer {
+	width: 100%;
+/*	width: 88.2%;
+	max-width: 1232px;
+	padding-left: 0.9%;
+	padding-right: 0.9%;
+	margin: auto;*/
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+/*#nav {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}*//*----------------------------------------------------*/
+/*.menu{
+	background:#000;
+	
+	color:#FFF;
+	text-align:center;
+	font-size:26px;
+	font-variant:small-caps;
+	text-decoration:none;
+	list-style:none;
+	position:absolute;
+	z-index:999;
+	width:94%;
+	margin-top:1px;
+	border-radius:10px;
+	
+}
+
+
+.menu > li{
+	
+	display:inline-block;
+}
+.menu > li > a{
+	text-decoration:none;
+	color:#FFF;
+	font-size:24px;
+	
+}*/
+
+
+/*-----------------------------------------------------*/
+
+/*#logo-img {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 10%;
+	display: block;
+}*/
+#button {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#hdr-iso {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	margin-top:0px;
+}
+#erp {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 89.7959%;
+	display: block;
+	text-align:left;
+	padding-left:5px;
+}
+#home-link {
+	clear: none;
+	float: left;
+	margin-left: 12.2448%;
+	width: 18.3673%;
+	display: block;
+}
+#content {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#cont-one {
+	clear: both;
+	float: left;
+	margin-left: 10.204%;
+	width: 38.7755% ;
+	display: block;
+}
+#cont-two {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100% !important;
+	display: block;
+}
+#cont-three {
+	clear: none;
+	float: left;
+	margin-left: 2.0408%;
+	width: 38.7755%;
+	display: block;
+}
+#school {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#school-img {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#school-cont {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#erp-solution {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#erp-solution_cont {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#order {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#order-cont {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#order-img {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#footer {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	
+}
+#foot-one {
+	clear: both;
+	float: left;
+	margin-left: 10.204%;
+	width: 18.3673%;
+	display: block;
+	font-size:1em;
+}
+#foot-two {
+	clear: none;
+	float: left;
+	margin-left: 2.0408%;
+	width: 18.3673%;
+	display: block;
+	font-size:1em;
+}
+#foot-three {
+	clear: none;
+	float: left;
+	margin-left: 2.0408%;
+	width: 18.3673%;
+	display: block;
+	font-size:1em;
+}
+#foot-four {
+	clear: none;
+	float: left;
+	margin-left: 2.0408%;
+	width: 18.3673%;
+	display: block;
+	font-size:1em;
+	
+}
+#futr {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+}
